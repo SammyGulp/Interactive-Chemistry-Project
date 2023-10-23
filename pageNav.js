@@ -13,7 +13,7 @@ case "exps":
     resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/exps";
 break;
 default:
-    resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/";
+    resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/pTable";
 break;
     
     //Should replace the site with another.
