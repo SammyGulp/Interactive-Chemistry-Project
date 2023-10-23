@@ -4,15 +4,16 @@ function goTo(page) {
     
     switch (page) {
 case "table":
-resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/pTable";
+    resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/pTable";
 break;
 case "journal":
-resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/journal";
+    resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/journal";
 break;
 case "experiment":
-resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/exps";
+    resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/exps";
 break;
 default:
+    resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/";
 break;
     
     //Should replace the site with another.
