@@ -9,7 +9,7 @@ break;
 case "journal":
     resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/journal";
 break;
-case "experiment":
+case "exps":
     resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/exps";
 break;
 default:
