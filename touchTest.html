@@ -1,6 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        function showElementInfo(elementSymbol) {
+            var elementInfo = ""; // Add descriptions for each element here
+
+            switch (elementSymbol) {
+    case "H":
+        elementInfo = "Hydrogen: The lightest element and the most abundant in the universe.";
+        break;
+    case "He":
+        elementInfo = "Helium: A noble gas used in balloons and as a cooling agent.";
+        break;
+    case "Li":
+        elementInfo = "Lithium: Used in batteries and for psychiatric medication.";
+        break;
+    case "Be":
+        elementInfo = "Beryllium: A lightweight metal used in various industrial applications.";
+        break;
+    case "B":
+        elementInfo = "Boron: Used in the manufacture of glass and as a trace mineral for health.";
+        break;
+    case "C":
+        elementInfo = "Carbon: The basis of life and the building block of organic compounds.";
+        break;
+    case "N":
+        elementInfo = "Nitrogen: A vital element in the Earth's atmosphere and essential for life.";
+        break;
+    case "O":
+        elementInfo = "Oxygen: Necessary for respiration and supports combustion.";
+        break;
+    case "F":
+        elementInfo = "Fluorine: Used in toothpaste and for various industrial applications.";
+        break;
+    case "Ne":
+        elementInfo = "Neon: A noble gas used in neon signs and lighting.";
+        break;
+    case "Na":
+        elementInfo = "Sodium: Essential for health and used in various chemical processes.";
+        break;
+    case "Mg":
+        elementInfo = "Magnesium: Important for biological processes and used in alloys.";
+        break;
+    case "Al":
+        elementInfo = "Aluminum: A lightweight metal used in construction and aerospace.";
+        break;
+    case "Si":
+        elementInfo = "Silicon: Used in semiconductors and for various industrial applications.";
+        break;
+    case "P":
+        elementInfo = "Phosphorus: Essential for life and used in fertilizers.";
+        break;
+    case "S":
+        elementInfo = "Sulfur: Used in various chemical processes and compounds.";
+        break;
+    case "Cl":
+        elementInfo = "Chlorine: Used for disinfection and in the production of PVC.";
+        break;
+    case "Ar":
+        elementInfo = "Argon: A noble gas used in welding and as an inert atmosphere.";
+        break;
+    case "K":
+        elementInfo = "Potassium: Essential for health and used in fertilizers.";
+        break;
+    case "Ca":
+        elementInfo = "Calcium: Important for bone health and used in various industries.";
+        break;
+    case "Sc":
+        elementInfo = "Scandium: Used in the aerospace industry and for lighting.";
+        break;
+    case "Ti":
+        elementInfo = "Titanium: Known for its strength and used in aerospace and medical implants.";
+        break;
+    case "V":
+        elementInfo = "Vanadium: Used in steel alloys and in the aerospace industry.";
+        break;
+    case "Cr":
+        elementInfo = "Chromium: Used in stainless steel and for corrosion resistance.";
+        break;
+    case "Mn":
+        elementInfo = "Manganese: Used in steel production and for batteries.";
+        break;
+    case "Fe":
+        elementInfo = "Iron: Essential for health and used in construction and manufacturing.";
+        break;
+    case "Co":
+        elementInfo = "Cobalt: Used in rechargeable batteries and for medical applications.";
+        break;
+    case "Ni":
+        elementInfo = "Nickel: Used in coins, stainless steel, and for various applications.";
+        break;
+    case "Cu":
+        elementInfo = "Copper: Important for electrical conductivity and used in wiring.";
+        break;
+    case "Zn":
+        elementInfo = "Zinc: Used in galvanization and for dietary supplements.";
+        break;
+    case "Ga":
+        elementInfo = "Gallium: Used in semiconductors and for medical applications.";
+        break;
+    case "Ge":
+        elementInfo = "Germanium: Used in electronics and as a semiconductor.";
+        break;
+    case "As":
+        elementInfo = "Arsenic: Used in the semiconductor industry and for various applications.";
+        break;
+    case "Se":
+        elementInfo = "Selenium: Used in electronics and for dietary supplements.";
+        break;
+    case "Br":
+        elementInfo = "Bromine: Used in flame retardants and for water treatment.";
+        break;
+    case "Kr":
+        elementInfo = "Krypton: A noble gas used in lasers and lighting.";
+        break;
+    case "Rb":
+        elementInfo = "Rubidium: Used in research and for atomic clocks.";
+        break;
+    case "Sr":
+        elementInfo = "Strontium: Used in fireworks and for health supplements.";
+        break;
+    case "Y":
+        elementInfo = "Yttrium: Used in electronics and for making phosphors.";
+        break;
+    case "Zr":
+        elementInfo = "Zirconium: Used in nuclear reactors and for alloys.";
+        break;
+    case "Nb":
+        elementInfo = "Niobium: Used in superconductors and for aerospace applications.";
+        break;
+    case "Mo":
+        elementInfo = "Molybdenum: Used in steel alloys and for various industrial purposes.";
+        break;
+    case "Tc":
+        elementInfo = "Technetium: A synthetic element used in medical imaging.";
+        break;
+    case "Ru":
+        elementInfo = "Ruthenium: Used in electronics and as a catalyst.";
+        break;
+    case "Rh":
+        elementInfo = "Rhodium: Used in catalytic converters and for jewelry.";
+        break;
+    case "Pd":
+        elementInfo = "Palladium: Used in catalytic converters and for various applications.";
+        break;
+    case "Ag":
+        elementInfo = "Silver: Valued for its beauty and used in jewelry, coins, and photography.";
+        break;
+    case "Cd":
+        elementInfo = "Cadmium: Used in batteries, pigments, and for corrosion protection.";
+        break;
+    case "In":
+        elementInfo = "Indium: Used in electronics and for making transparent conductive coatings.";
+        break;
+    case "Sn":
+        elementInfo = "Tin: Used in soldering, cans, and for various applications.";
+        break;
+    case "Sb":
+        elementInfo = "Antimony: Used in flame retardants and for various applications.";
+        break;
+    case "Te":
+        elementInfo = "Tellurium: Used in semiconductors and for solar panels.";
+        break;
+    case "I":
+        elementInfo = "Iodine: Used in medical applications and for sanitation.";
+        break;
+    case "Xe":
+        elementInfo = "Xenon: A noble gas used in medical imaging and lighting.";
+        break;
+    case "Cs":
+        elementInfo = "Cesium: Used in atomic clocks and for drilling fluids.";
+        break;
+    case "Ba":
+        elementInfo = "Barium: Used in drilling fluids, X-ray imaging, and fireworks.";
+        break;
+    case "La":
+        elementInfo = "Lanthanum: Used in catalysts, carbon lighting, and for various applications.";
+        break;
+    case "Ce":
+        elementInfo = "Cerium: Used in catalytic converters, glass polishing, and for alloys.";
+        break;
+    case "Pr":
+        elementInfo = "Praseodymium: Used in rare earth magnets and for various applications.";
+        break;
+    case "Nd":
+        elementInfo = "Neodymium: Used in rare earth magnets and for laser applications.";
+        break;
+    case "Pm":
+        elementInfo = "Promethium: A synthetic element used in nuclear batteries and research.";
+        break;
+    case "Sm":
+        elementInfo = "Samarium: Used in magnets, catalysts, and for nuclear reactors.";
+        break;
+    case "Eu":
+        elementInfo = "Europium: Used in phosphors for color TV screens and fluorescent lamps.";
+        break;
+    case "Gd":
+        elementInfo = "Gadolinium: Used in contrast agents for MRI and for neutron capture therapy.";
+        break;
+    case "Tb":
+        elementInfo = "Terbium: Used in phosphors for color TV screens and fluorescent lamps.";
+        break;
+    case "Dy":
+        elementInfo = "Dysprosium: Used in rare earth magnets and for nuclear reactors.";
+        break;
+    case "Ho":
+        elementInfo = "Holmium: Used in nuclear control rods and for various applications.";
+        break;
+    case "Er":
+        elementInfo = "Erbium: Used in fiber optic communications and for various applications.";
+        break;
+    case "Tm":
+        elementInfo = "Thulium: Used in X-ray machines and for lasers.";
+        break;
+    case "Yb":
+        elementInfo = "Ytterbium: Used in lasers and for various applications.";
+        break;
+    case "Lu":
+        elementInfo = "Lutetium: Used in medical imaging and for various applications.";
+        break;
+    case "Hf":
+        elementInfo = "Hafnium: Used in nuclear reactors and for superalloys.";
+        break;
+    case "Ta":
+        elementInfo = "Tantalum: Used in electronics and for making capacitors.";
+        break;
+    case "W":
+        elementInfo = "Tungsten: Known for its high melting point and used in electrical wires.";
+        break;
+    case "Re":
+        elementInfo = "Rhenium: Used in superalloys and for various industrial applications.";
+        break;
+    case "Os":
+        elementInfo = "Osmium: Known for its density and used in fountain pen tips.";
+        break;
+    case "Ir":
+        elementInfo = "Iridium: Used in spark plugs and for its corrosion resistance.";
+        break;
+    case "Pt":
+        elementInfo = "Platinum: Valued for its beauty and used in jewelry, catalysts, and more.";
+        break;
+    case "Au":
+        elementInfo = "Gold: Valued for its beauty and used in jewelry, coins, and electronics.";
+        break;
+    case "Hg":
+        elementInfo = "Mercury: Used in thermometers, barometers, and for various applications.";
+        break;
+    case "Tl":
+        elementInfo = "Thallium: Used in electronics and for its toxicity in rat poison.";
+        break;
+    case "Pb":
+        elementInfo = "Lead: Used in batteries, ammunition, and for various industrial applications.";
+        break;
+    case "Bi":
+        elementInfo = "Bismuth: Used in cosmetics and for various industrial applications.";
+        break;
+    case "Po":
+        elementInfo = "Polonium: A highly radioactive element with limited practical applications.";
+        break;
+    case "At":
+        elementInfo = "Astatine: A highly radioactive element with limited practical applications.";
+        break;
+    case "Rn":
+        elementInfo = "Radon: A radioactive noble gas found in the Earth's crust.";
+        break;
+    case "Fr":
+        elementInfo = "Francium: A highly radioactive element with limited practical applications.";
+        break;
+    case "Ra":
+        elementInfo = "Radium: Radioactive and used in early glow-in-the-dark paints.";
+        break;
+    case "Ac":
+        elementInfo = "Actinium: A radioactive element with limited practical applications.";
+        break;
+    case "Th":
+        elementInfo = "Thorium: Used in nuclear reactors and for making mantles in gas lamps.";
+        break;
+    case "Pa":
+        elementInfo = "Protactinium: A highly radioactive element with limited practical applications.";
+        break;
+    case "U":
+        elementInfo = "Uranium: Used in nuclear reactors and for nuclear weapons.";
+        break;
+    case "Np":
+        elementInfo = "Neptunium: A synthetic element used in nuclear reactors.";
+        break;
+    case "Pu":
+        elementInfo = "Plutonium: Used in nuclear weapons and nuclear reactors.";
+        break;
+    case "Am":
+        elementInfo = "Americium: Used in smoke detectors and for research purposes.";
+        break;
+    case "Cm":
+        elementInfo = "Curium: A synthetic element used in research and nuclear reactors.";
+        break;
+    case "Bk":
+        elementInfo = "Berkelium: A synthetic element used in research and nuclear reactors.";
+        break;
+    case "Cf":
+        elementInfo = "Californium: A synthetic element used in research and nuclear reactors.";
+        break;
+    case "Es":
+        elementInfo = "Einsteinium: A synthetic element used in research.";
+        break;
+    case "Fm":
+        elementInfo = "Fermium: A synthetic element used in research.";
+        break;
+    case "Md":
+        elementInfo = "Mendelevium: A synthetic element used in research.";
+        break;
+    case "No":
+        elementInfo = "Nobelium: A synthetic element used in research.";
+        break;
+    case "Lr":
+        elementInfo = "Lawrencium: A synthetic element used in research.";
+        break;
+
+    default:
+        elementInfo = "Element information not available.";
+}
+alert(elementInfo);
+
+        }
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +338,8 @@
 ">Welcome To The Interactive Peridoic Table</h1>
     <p>Click on an element to see more information:</p>
     <p>
-        <!DOCTYPE html>
-<html>
-<head>
 
-</head>
-<body>
-
+    
   
     <table> 
     <tr>
@@ -32,7 +349,7 @@
 
     <table>
         <tr>
-            <td style="width: 50px; height: 50px; background-color: #dd8484; text-align: center; border: 1px solid black;">1<br>
+            <td onclick="showElementInfo('H');" style="width: 50px; height: 50px; background-color: #dd8484; text-align: center; border: 1px solid black;">1<br>
         H</td>
       <!-- adding 16 empty cells -->
       <td style = "empty-cells: hide; width: 50px; height: 50px;"></td>
@@ -53,14 +370,14 @@
       <td style = "empty-cells: hide;"></td>
       <!-- <td style = "empty-cells: hide;"></td> -->
 
-            <td style="color: rgb(28, 126, 6);background-color: #bbc8e6;width: 50px; height: 50px;text-align: center; border: 1px solid black;">2<br>
+            <td onclick="showElementInfo('He');" style="color: rgb(28, 126, 6);background-color: #bbc8e6;width: 50px; height: 50px;text-align: center; border: 1px solid black;">2<br>
          He </td>
         </tr>
 
         <!-- New row -->
 
         <tr>
-            <td style= "background-color: #e99bd8; width: 50px; height: 50px;text-align: center; border: 1px solid black;">3<br>
+            <td onclick="showElementInfo('Li');" style= "background-color: #e99bd8; width: 50px; height: 50px;text-align: center; border: 1px solid black;">3<br>
         Li </td>
       <td style= "background-color: #9bc7e9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">4<br>
           Be </td>
@@ -75,25 +392,25 @@
       <td style = "empty-cells: hide;"></td>
       <td style = "empty-cells: hide;"></td>
       
-      <td style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center;border: 1px solid black;">5<br>
+      <td onclick="showElementInfo('B');" style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center;border: 1px solid black;">5<br>
         B </td>
-      <td style= "background-color: #f1845f; width: 50px; height: 50px;text-align: center;border: 1px solid black;">6<br>
+      <td onclick="showElementInfo('C');" style= "background-color: #f1845f; width: 50px; height: 50px;text-align: center;border: 1px solid black;">6<br>
           C </td>
-      <td style= "color: rgb(28, 126, 6);background-color: #f1845f; width: 50px; height: 50px;text-align: center;border: 1px solid black;">7<br>
+      <td onclick="showElementInfo('N');" style= "color: rgb(28, 126, 6);background-color: #f1845f; width: 50px; height: 50px;text-align: center;border: 1px solid black;">7<br>
             N </td>
-      <td style= "color: rgb(28, 126, 6);background-color: #f1845f; width: 50px; height: 50px;text-align: center;border: 1px solid black;">8<br>
+      <td onclick="showElementInfo('O');" style= "color: rgb(28, 126, 6);background-color: #f1845f; width: 50px; height: 50px;text-align: center;border: 1px solid black;">8<br>
               O </td>
-      <td style= "color: rgb(28, 126, 6);background-color: #f5f5d9; width: 50px; height: 50px;text-align: center;border: 1px solid black;">9<br>
+      <td onclick="showElementInfo('F');" style= "color: rgb(28, 126, 6);background-color: #f5f5d9; width: 50px; height: 50px;text-align: center;border: 1px solid black;">9<br>
                 F </td>
-      <td style= "color: rgb(28, 126, 6);background-color: #bbc8e6; width: 50px; height: 50px;text-align: center;border: 1px solid black;">10<br>
+      <td onclick="showElementInfo('Ne');" style= "color: rgb(28, 126, 6);background-color: #bbc8e6; width: 50px; height: 50px;text-align: center;border: 1px solid black;">10<br>
                   Ne </td>
         </tr>
 
         <!-- New row -->
         <tr>
-          <td style= "background-color: #e99bd8; width: 50px; height: 50px;text-align: center; border: 1px solid black;">11<br>
+          <td onclick="showElementInfo('Na');" style= "background-color: #e99bd8; width: 50px; height: 50px;text-align: center; border: 1px solid black;">11<br>
             Na </td>
-          <td style= "background-color: #9bc7e9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">12<br>
+          <td onclick="showElementInfo('Mg');" style= "background-color: #9bc7e9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">12<br>
               Mg </td>
           <td style = "empty-cells: hide;"></td>
           <td style = "empty-cells: hide;"></td>
@@ -106,182 +423,182 @@
           <td style = "empty-cells: hide;"></td>
           <td style = "empty-cells: hide;"></td>
           
-          <td style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center;border: 1px solid black;">13<br>
+          <td onclick="showElementInfo('Al');" style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center;border: 1px solid black;">13<br>
             Al </td>
-          <td style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center;border: 1px solid black;">14<br>
+          <td onclick="showElementInfo('Si');" style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center;border: 1px solid black;">14<br>
               Si </td>
-          <td style= "background-color: #f1845f; width: 50px; height: 50px;text-align: center;border: 1px solid black;">15<br>
+          <td onclick="showElementInfo('P');" style= "background-color: #f1845f; width: 50px; height: 50px;text-align: center;border: 1px solid black;">15<br>
                 P </td>
-          <td style= "background-color: #f1845f; width: 50px; height: 50px;text-align: center;border: 1px solid black;">16<br>
+          <td onclick="showElementInfo('S');" style= "background-color: #f1845f; width: 50px; height: 50px;text-align: center;border: 1px solid black;">16<br>
                   S </td>
-          <td style= "color: rgb(28, 126, 6);background-color: #f5f5d9; width: 50px; height: 50px;text-align: center;border: 1px solid black;">17<br>
+          <td onclick="showElementInfo('Cl');" style= "color: rgb(28, 126, 6);background-color: #f5f5d9; width: 50px; height: 50px;text-align: center;border: 1px solid black;">17<br>
                   Cl </td>
-          <td style= "color: rgb(28, 126, 6);background-color: #bbc8e6; width: 50px; height: 50px;text-align: center;border: 1px solid black;">18<br>
+          <td onclick="showElementInfo('Ar');" style= "color: rgb(28, 126, 6);background-color: #bbc8e6; width: 50px; height: 50px;text-align: center;border: 1px solid black;">18<br>
                       Ar </td>  
         </tr>
         
         <!-- New row -->
 
         <tr>
-          <td style= "background-color: #e99bd8; width: 50px; height: 50px;text-align: center; border: 1px solid black;">19<br>
+          <td onclick="showElementInfo('K');" style= "background-color: #e99bd8; width: 50px; height: 50px;text-align: center; border: 1px solid black;">19<br>
             K </td>
-          <td style= "background-color: #9bc7e9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">20<br>
+          <td onclick="showElementInfo('Ca');" style= "background-color: #9bc7e9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">20<br>
               Ca </td>
-          <td style= "background-color: #eae7a9; width: 80px; height: 50px;text-align: center; border: 1px solid black;">21<br>
+          <td onclick="showElementInfo('Sc');" style= "background-color: #eae7a9; width: 80px; height: 50px;text-align: center; border: 1px solid black;">21<br>
                 Sc </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">22<br>
+          <td onclick="showElementInfo('Ti');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">22<br>
                   Ti </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">23<br>
+          <td onclick="showElementInfo('V');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">23<br>
                     V </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">24<br>
+          <td onclick="showElementInfo('Cr');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">24<br>
                       Cr </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">25<br>
+          <td onclick="showElementInfo('Mn');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">25<br>
                         Mn </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">26<br>
+          <td onclick="showElementInfo('Fe');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">26<br>
                           Fe </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">27<br>
+          <td onclick="showElementInfo('Co');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">27<br>
                             Co </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">28<br>
+          <td onclick="showElementInfo('Ni');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">28<br>
                               Ni </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">29<br>
+          <td onclick="showElementInfo('Cu');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">29<br>
                                 Cu </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">30<br>
+          <td onclick="showElementInfo('Zn');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">30<br>
                                   Zn </td>
-          <td style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center;border: 1px solid black;">31<br>
+          <td onclick="showElementInfo('Ga');" style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center;border: 1px solid black;">31<br>
                                     Ga </td>
-          <td style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center;border: 1px solid black;">32<br>
+          <td onclick="showElementInfo('Ge');" style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center;border: 1px solid black;">32<br>
                                       Ge </td>
-          <td style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center;border: 1px solid black;">33<br>
+          <td onclick="showElementInfo('As');" style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center;border: 1px solid black;">33<br>
                                         As </td>
-          <td style= "background-color: #f1845f; width: 50px; height: 50px;text-align: center;border: 1px solid black;">34<br>
+          <td onclick="showElementInfo('Se');" style= "background-color: #f1845f; width: 50px; height: 50px;text-align: center;border: 1px solid black;">34<br>
                                           Se </td>
-          <td style= "background-color: #f5f5d9; width: 50px; height: 50px;text-align: center;border: 1px solid black;">35<br>
+          <td onclick="showElementInfo('Br');" style= "background-color: #f5f5d9; width: 50px; height: 50px;text-align: center;border: 1px solid black;">35<br>
                                           Br </td>
-          <td style= "color: rgb(28, 126, 6);background-color: #bbc8e6; width: 50px; height: 50px;text-align: center;border: 1px solid black;">36<br>
+          <td onclick="showElementInfo('Kr');" style= "color: rgb(28, 126, 6);background-color: #bbc8e6; width: 50px; height: 50px;text-align: center;border: 1px solid black;">36<br>
                                               Kr </td> 
         </tr>
 
         <!-- New row -->
 
         <tr>
-          <td style= "background-color: #e99bd8; width: 50px; height: 50px;text-align: center; border: 1px solid black;">37<br>
+          <td onclick="showElementInfo('Rb');" style= "background-color: #e99bd8; width: 50px; height: 50px;text-align: center; border: 1px solid black;">37<br>
             Rb </td>
-          <td style= "background-color: #9bc7e9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">38<br>
+          <td onclick="showElementInfo('Sr');" style= "background-color: #9bc7e9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">38<br>
               Sr </td>
-          <td style= "background-color: #eae7a9; width: 80px; height: 50px;text-align: center; border: 1px solid black;">39<br>
+          <td onclick="showElementInfo('Y');" style= "background-color: #eae7a9; width: 80px; height: 50px;text-align: center; border: 1px solid black;">39<br>
                 Y </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">40<br>
+          <td onclick="showElementInfo('Zr');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">40<br>
                   Zr </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">41<br>
+          <td onclick="showElementInfo('Nb');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">41<br>
                     Nb </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">42<br>
+          <td onclick="showElementInfo('Mo');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">42<br>
                       Mo </td>
-          <td style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">43<br>
+          <td onclick="showElementInfo('Tc');" style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">43<br>
                         Tc </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">44<br>
+          <td onclick="showElementInfo('Ru');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">44<br>
                           Ru </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">45<br>
+          <td onclick="showElementInfo('Rh');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">45<br>
                             Rh </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">46<br>
+          <td onclick="showElementInfo('Pd');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">46<br>
                               Pd </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">47<br>
+          <td onclick="showElementInfo('Ag');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">47<br>
                                 Ag </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">48<br>
+          <td onclick="showElementInfo('Cd');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">48<br>
                                   Cd </td>
-          <td style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center;border: 1px solid black;">49<br>
+          <td onclick="showElementInfo('In');" style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center;border: 1px solid black;">49<br>
                                     In </td>
-          <td style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center;border: 1px solid black;">50<br>
+          <td onclick="showElementInfo('Sn');" style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center;border: 1px solid black;">50<br>
                                       Sn </td>
-          <td style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center;border: 1px solid black;">51<br>
+          <td onclick="showElementInfo('Sb');" style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center;border: 1px solid black;">51<br>
                                         Sb </td>
-          <td style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center;border: 1px solid black;">52<br>
+          <td onclick="showElementInfo('Te');" style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center;border: 1px solid black;">52<br>
                                           Te </td>
 
-          <td style= "background-color: #f5f5d9; width: 50px; height: 50px;text-align: center;border: 1px solid black;">53<br>
+          <td onclick="showElementInfo('I');" style= "background-color: #f5f5d9; width: 50px; height: 50px;text-align: center;border: 1px solid black;">53<br>
                                           I </td>
-          <td style= "color: rgb(28, 126, 6);background-color: #bbc8e6; width: 50px; height: 50px;text-align: center;border: 1px solid black;">54<br>
+          <td onclick="showElementInfo('Xe');" style= "color: rgb(28, 126, 6);background-color: #bbc8e6; width: 50px; height: 50px;text-align: center;border: 1px solid black;">54<br>
                                               Xe </td>
         </tr>
 
         <!-- New row -->
 
         <tr>
-          <td style= "background-color: #e99bd8; width: 50px; height: 50px;text-align: center; border: 1px solid black;">55<br>
+          <td onclick="showElementInfo('Cs');" style= "background-color: #e99bd8; width: 50px; height: 50px;text-align: center; border: 1px solid black;">55<br>
             Cs </td>
-          <td style= "background-color: #9bc7e9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">56<br>
+          <td onclick="showElementInfo('Ba');" style= "background-color: #9bc7e9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">56<br>
               Ba </td>
           <td style= "background-color:  #f9ddf5; width: 80px; height: 50px;text-align: center; border: 1px solid black;">57-71<br>
                  </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">72<br>
+          <td onclick="showElementInfo('Hf');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">72<br>
                                               Hf </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">73<br>
+          <td onclick="showElementInfo('Ta');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">73<br>
                                                 Ta </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">74<br>
+          <td onclick="showElementInfo('W');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">74<br>
                                                   W </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">75<br>
+          <td onclick="showElementInfo('Re');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">75<br>
                                                     Re </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">76<br>
+          <td onclick="showElementInfo('Os');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">76<br>
                                                       Os </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">77<br>
+          <td onclick="showElementInfo('Ir');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">77<br>
                                                         Ir </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">78<br>
+          <td onclick="showElementInfo('Pt');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">78<br>
                                                           Pt </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">79<br>
+          <td onclick="showElementInfo('Au');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">79<br>
                                                             Au </td>
-          <td style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">80<br>
+          <td onclick="showElementInfo('Hg');" style= "background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">80<br>
                                                               Hg </td>
-          <td style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center; border: 1px solid black;">81<br>
+          <td onclick="showElementInfo('Tl');" style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center; border: 1px solid black;">81<br>
                                                                 Tl </td>
-          <td style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center; border: 1px solid black;">82<br>
+          <td onclick="showElementInfo('Pb');" style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center; border: 1px solid black;">82<br>
                                                                   Pb </td>
-          <td style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center; border: 1px solid black;">83<br>
+          <td onclick="showElementInfo('Bi');" style= "background-color: #b1f38b; width: 50px; height: 50px;text-align: center; border: 1px solid black;">83<br>
                                                                     Bi </td>
-          <td style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center; border: 1px solid black;">84<br>
+          <td onclick="showElementInfo('Po');" style= "background-color: #bc6406; width: 50px; height: 50px;text-align: center; border: 1px solid black;">84<br>
                                                                       Po </td>
-          <td style= "background-color: #f5f5d9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">85<br>
+          <td onclick="showElementInfo('At');" style= "background-color: #f5f5d9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">85<br>
                                                                         At </td>
-          <td style= "color: rgb(28, 126, 6);background-color: #bbc8e6; width: 50px; height: 50px;text-align: center; border: 1px solid black;">86<br>
+          <td onclick="showElementInfo('Rn');" style= "color: rgb(28, 126, 6);background-color: #bbc8e6; width: 50px; height: 50px;text-align: center; border: 1px solid black;">86<br>
                                                                           Rn </td>
         </tr>
 
         <!-- New row -->
 
         <tr>
-          <td style= "background-color: #e99bd8; width: 50px; height: 50px;text-align: center; border: 1px solid black;">87<br>
+          <td onclick="showElementInfo('Fr');" style= "background-color: #e99bd8; width: 50px; height: 50px;text-align: center; border: 1px solid black;">87<br>
             Fr </td>
-          <td style= "background-color: #9bc7e9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">88<br>
+          <td onclick="showElementInfo('Ra');" style= "background-color: #9bc7e9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">88<br>
               Ra </td>
           <td style= "background-color:  #f9ddf5; width: 80px; height: 50px;text-align: center; border: 1px solid black;">89-103<br>
                  </td>
-          <td style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">104<br>
+          <td onclick="showElementInfo('Rf');" style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">104<br>
                                                                           Rf </td>
-          <td style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">105<br>
+          <td onclick="showElementInfo('Db');" style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">105<br>
                                                                             Db </td>
-          <td style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">106<br>
+          <td onclick="showElementInfo('Sg');" style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">106<br>
                                                                               Sg </td>
-          <td style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">107<br>
+          <td onclick="showElementInfo('Bh');" style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">107<br>
                                                                                 Bh </td>
-          <td style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">108<br>
+          <td onclick="showElementInfo('Hs');" style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">108<br>
                                                                                   Hs </td>
-          <td style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">109<br>
+          <td onclick="showElementInfo('Mt');" style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">109<br>
                                                                                     Mt </td>
-          <td style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">110<br>
+          <td onclick="showElementInfo('Ds');" style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">110<br>
                                                                                       Ds </td>
-          <td style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">111<br>
+          <td onclick="showElementInfo('Rg');" style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">111<br>
                                                                                         Rg </td>
-          <td style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">112<br>
+          <td onclick="showElementInfo('Cn');" style= "color: red;background-color: #eae7a9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">112<br>
                                                                                           Cn </td>
-          <td style= "color: red;background-color: #fefef9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">113<br>
+          <td onclick="showElementInfo('Nh');" style= "color: red;background-color: #fefef9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">113<br>
                                                                                             Nh </td>
-          <td style= "color: red;background-color: #fefef9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">114<br>
+          <td onclick="showElementInfo('Fl');" style= "color: red;background-color: #fefef9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">114<br>
                                                                                               Fl </td>
-          <td style= "color: red;background-color: #fefef9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">115<br>
+          <td onclick="showElementInfo('Mc');" style= "color: red;background-color: #fefef9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">115<br>
                                                                                                 Mc </td>
-          <td style= "color: red;background-color: #fefef9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">116<br>
+          <td onclick="showElementInfo('Lv');" style= "color: red;background-color: #fefef9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">116<br>
                                                                                                   Lv </td>
-          <td style= "color: red;background-color: #fefef9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">117<br>
+          <td onclick="showElementInfo('Ts');" style= "color: red;background-color: #fefef9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">117<br>
                                                                                                     Ts </td>
-          <td style= "color: red;background-color: #fefef9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">118<br>
+          <td onclick="showElementInfo('Ar');" style= "color: red;background-color: #fefef9; width: 50px; height: 50px;text-align: center; border: 1px solid black;">118<br>
                                                                                                       Ar </td>
         </tr>
       </table>
@@ -310,35 +627,35 @@
           <td style = "empty-cells: hide;width: 50px; height: 50px"></td>
           <td style = "empty-cells: hide;width: 50px; height: 50px"></td>
  
-          <td style= "background-color: #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">57<br>
+          <td onclick="showElementInfo('La');" style= "background-color: #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">57<br>
             La </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">58<br>
+          <td onclick="showElementInfo('Ce');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">58<br>
               Ce </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">59<br>
+          <td onclick="showElementInfo('Pr');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">59<br>
                 Pr </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">60<br>
+          <td onclick="showElementInfo('Nd');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">60<br>
                   Nd </td>
-          <td style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">61<br>
+          <td onclick="showElementInfo('Pm');" style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">61<br>
                     Pm </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">62<br>
+          <td onclick="showElementInfo('Sm');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">62<br>
                       Sm </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">63<br>
+          <td onclick="showElementInfo('Eu');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">63<br>
                         Eu </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">64<br>
+          <td onclick="showElementInfo('Gd');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">64<br>
                           Gd </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">65<br>
+          <td onclick="showElementInfo('Tb');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">65<br>
                             Tb </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">66<br>
+          <td onclick="showElementInfo('Dy');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">66<br>
                               Dy </td>
-          <td style= "background-color: #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">67<br>
+          <td onclick="showElementInfo('Ho');" style= "background-color: #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">67<br>
                                 Ho </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">68<br>
+          <td onclick="showElementInfo('Er');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">68<br>
                                   Er </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">69<br>
+          <td onclick="showElementInfo('Tm');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">69<br>
                                     Tm </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">70<br>
+          <td onclick="showElementInfo('Yb');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">70<br>
                                       Yb </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">71<br>
+          <td onclick="showElementInfo('Lu');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">71<br>
                                         Lu </td>
         </tr>
 
@@ -349,45 +666,42 @@
           <td style = "empty-cells: hide;width: 50px; height: 50px"></td>
           <td style = "empty-cells: hide;width: 50px; height: 50px"></td>
 
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">89<br>
+          <td onclick="showElementInfo('Ac');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">89<br>
             Ac </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">90<br>
+          <td onclick="showElementInfo('Th');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">90<br>
               Th </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">91<br>
+          <td onclick="showElementInfo('Pa');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">91<br>
                 Pa </td>
-          <td style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">92<br>
+          <td onclick="showElementInfo('U');" style= "background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">92<br>
                   U </td>
-          <td style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">93<br>
+          <td onclick="showElementInfo('Np');" style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">93<br>
                     Np </td>
-          <td style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">94<br>
+          <td onclick="showElementInfo('Pu');" style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">94<br>
                       Pu </td>
-          <td style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">95<br>
+          <td onclick="showElementInfo('Am');" style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">95<br>
                         Am </td>
-          <td style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">96<br>
+          <td onclick="showElementInfo('Cm');" style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">96<br>
                           Cm </td>
-          <td style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">97<br>
+          <td onclick="showElementInfo('Bk');" style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">97<br>
                             Bk </td>
-          <td style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">98<br>
+          <td onclick="showElementInfo('Cf');" style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">98<br>
                               Cf </td>
-          <td style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">99<br>
+          <td onclick="showElementInfo('Es');" style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">99<br>
                                 Es </td>
-          <td style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">100<br>
+          <td onclick="showElementInfo('Fm');" style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">100<br>
                                   Fm </td>
-          <td style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">101<br>
+          <td onclick="showElementInfo('Md');" style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">101<br>
                                     Md </td>
-          <td style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">102<br>
+          <td onclick="showElementInfo('No');" style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">102<br>
                                       No </td>
-          <td style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">103<br>
+          <td onclick="showElementInfo('Lr');" style= "color: red;background-color:  #f9ddf5; width: 50px; height: 50px;text-align: center; border: 1px solid black;">103<br>
                                         Lr </td>
         </tr>
                                                                           
 
 
 
-</body>
-</html>
-    </p>   
+
     
-    
-</body>
+</table>
 </html>
