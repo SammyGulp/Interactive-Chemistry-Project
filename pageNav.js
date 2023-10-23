@@ -12,8 +12,10 @@ break;
 case "experiment":
 resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/exps";
 break;
-    
+default:
+break;
     
     //Should replace the site with another.
     window.open(resource, "_parent");
+}
 }
