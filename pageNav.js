@@ -16,7 +16,8 @@ default:
     resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/pTable";
 break;
     
-    //Should replace the site with another.
-    window.open(resource, "_parent");
+    
 }
+//Should replace the site with another.
+    window.open(resource, "_parent");
 }
