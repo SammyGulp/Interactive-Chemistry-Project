@@ -13,7 +13,7 @@ case "exps":
     resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/exps";
 break;
 default:
-    resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/pTable";
+    resource = "https://sammygulp.github.io/Interactive-Chemistry-Project/";
 break;
     
     
